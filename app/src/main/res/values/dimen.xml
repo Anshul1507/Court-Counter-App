@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="a">0dp</dimen>
+    <dimen name="team_margin">16dp</dimen>
+    <dimen name="marginbottom">24dp</dimen>
+    <dimen name="bar">1dp</dimen>
+    <dimen name="barLength">285dp</dimen>
+    <dimen name="weight">1</dimen>
+    <dimen name="textsize">30sp</dimen>
+</resources>

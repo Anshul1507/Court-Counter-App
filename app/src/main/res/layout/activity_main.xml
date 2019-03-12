@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="564dp"
+        android:background="@drawable/bb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="@dimen/a"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/weight"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/start_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:text="Start timer" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/team_margin"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/teamA"
+                android:textSize="@dimen/textsize" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginbottom"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/score"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/scoreThreeForA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginbottom"
+                android:layout_marginRight="@dimen/marginbottom"
+                android:onClick="scoreThreeForA"
+                android:text="+3 Points" />
+
+            <Button
+                android:id="@+id/scoreTwoForA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginbottom"
+                android:layout_marginRight="@dimen/marginbottom"
+                android:onClick="scoreTwoForA"
+                android:text="+2 Points" />
+
+            <Button
+                android:id="@+id/scoreFreeThrowForA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginbottom"
+                android:layout_marginRight="@dimen/marginbottom"
+                android:onClick="scoreFreeThrowForA"
+                android:text="Free Throw" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/bar"
+            android:layout_height="@dimen/barLength"
+            android:layout_marginTop="80dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="@dimen/a"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/weight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="0"
+                android:textSize="36dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/team_margin"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/teamB"
+                android:textSize="@dimen/textsize" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginbottom"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/score"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/scoreThreeForB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginbottom"
+                android:layout_marginRight="@dimen/marginbottom"
+                android:onClick="scoreThreeForB"
+                android:text="+3 Points" />
+
+            <Button
+                android:id="@+id/scoreTwoForB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginbottom"
+                android:layout_marginRight="@dimen/marginbottom"
+                android:onClick="scoreTwoForB"
+                android:text="+2 Points" />
+
+            <Button
+                android:id="@+id/scoreFreeThrowForB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginbottom"
+                android:layout_marginRight="@dimen/marginbottom"
+                android:onClick="scoreFreeThrowForB"
+                android:text="Free Throw" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="reset"
+        android:text="TRY AGAIN" />
+
+</RelativeLayout>
+</ScrollView>
